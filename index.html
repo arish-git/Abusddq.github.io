@@ -8,6 +8,9 @@
                 font-weight: bolder;
                 background-color: rgb(219, 219, 219);
             }
+            input[type=text]:hover{
+                background-color: rgb(248, 248, 248);
+            }
             img{
                 display: block;
                 margin-right: auto;
@@ -28,12 +31,12 @@
                 font-size: 18px;
                 font-weight: 100;}
 
-            .tvt{
+            .search{
                 text-align: center;
-                display: inline-block;
-                position: absolute;
+                display: block;
                 margin-right: auto;
-                margin-left: 615px;
+                margin-left: auto;
+            
                 padding-top: 25px;
                 padding-bottom: 2px;
                 padding-left: 15px;
@@ -57,21 +60,49 @@
                 border-width: 0px;
                 height: 30px;
                 font-size: 14px;
+                font-weight: lighter; }
+
+            .Images{
+                position: relative;
+                top: 8px;
+                margin-left: 1340px;
+                right 16px;
+                
+                border-radius: 3px;
+                border-color: gray;
+                border-width: 0px;
+                height: 30px;
+                font-size: 14px;
                 font-weight: lighter; 
+                padding-top: 2px;
+                padding-bottom: 2px;
+                padding-left: 15px;
+                padding-right: 15px;
+
+            }    
                    
              
         </style>   
     </head>
     <body>
+        <form action="index.html">
+            <div class="Images">
+                <input type="submit" value="All"> 
+                <input type="submit" value="Images" >
+            </div>
+        </form>
+           
+        
         <img src="logo.jpg" alt="Google"
         style="width: 325px;">
         <form action="https://google.com/search">
             <input type="text" name="q" style="width: 520px;">
-            <div class="tvt">
+            <div class="search">
                 <input type="submit" value="Google Search"> 
-                <input type="submit" value="I'm feeling lucky" >
+                
             </div>
            
         </form>
+        
     </body>
 </html>
