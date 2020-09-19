@@ -24,7 +24,7 @@
                 display: block;
                 margin-right: auto;
                 margin-left: auto;
-                margin-top: 110px;
+                margin-top: 115px;
                 
             }
             input[type=text] {
@@ -35,6 +35,7 @@
                 margin-top: 45px;
                 padding: 8px 8px;
                 height: 28px;
+                text-indent: 20px;
                 border-radius: 20px;
                 border-width: thin;
                 border-color: lightgrey;
@@ -91,32 +92,62 @@
                 padding-left: 15px;
                 padding-right: 15px;
 
-            }    
-                   
-             
+
+
+            }   
+            a:hover{
+                text-decoration: underline;
+            } 
+            .linkk{
+                position: fixed;
+                display: inline-block;
+               
+                
+                top: 10px;
+                right: 15px;
+
+
+            }       
+            a{
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: lighter;
+                font-size: 14px;
+                text-decoration: none;
+                color:rgb(39, 39, 39);
+                padding: 5px;
+            } 
+            .main i {
+                position: absolute;
+                margin-top: 15px;
+                margin-left: 500px;
+                margin-right: auto;}
+
+            .icon{
+                padding: 10px;
+                min-width: 40px;
+
+            }
         </style>   
     </head>
+
+
+
     <body>
-        <form action="index.html">
-            <div class="Images">
-                <input type="submit" value="All"> 
-                <input type="submit" value="Images" >
-            </div>
+        <div class=linkk>
+            <a href="gimages.html">Images</a>
+            <a href="advanced.html">Advanced</a>
+        </div>    
         </form>
-        <img src="logo.jpg" alt="Google" style="width:330px;">
+        <img src="logo.png" alt="Google" style="width:279px;">
         <div class="main">
             <form action="https://google.com/search">
-                
+                <i class="fa fa-search"></i> 
                 <input type="text" name="q" style="width: 520px;">  
                 <div class="search">
                     <input type="submit" value="Google Search"> 
                         
-                    
                 </div>
-               
             </form>
-        
-        
-        
+        </div>
     </body>
 </html>
